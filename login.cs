@@ -19,12 +19,15 @@ namespace prySP1
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
+            lstModulo.Items.Add("Administracion");
+            lstModulo.Items.Add("Sistema");
+            lstModulo.Items.Add("Compras");
+            lstModulo.Items.Add("Ventas");
         }
 
         private void cmdCancelar_Click(object sender, EventArgs e)
@@ -34,7 +37,18 @@ namespace prySP1
 
         private void cmdAceptar_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+            txtUsuario.MaxLength = 10;
+
+        }
+
+        private void lstModulo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
